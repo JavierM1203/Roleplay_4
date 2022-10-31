@@ -11,6 +11,7 @@ namespace RoleplayGame.Items
         Sword = 4,
         Helmet = 5,
         Bazooka = 6,
+        Stick = 7,
     }
 
     /// <summary>
@@ -33,6 +34,7 @@ namespace RoleplayGame.Items
                 case ItemType.Sword: return new Sword();
                 case ItemType.Helmet: return new Helmet();
                 case ItemType.Bazooka: return new Bazooka();
+                case ItemType.Stick: return new Stick();
 
                 default: return null;
             }

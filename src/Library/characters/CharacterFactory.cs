@@ -26,6 +26,7 @@ namespace RoleplayGame.Characters
             {
                 case CharacterType.Elf: return new Elf(name);
                 case CharacterType.Wizard: return new Wizard(name);
+                case CharacterType.Troll: return new Troll(name);
 
                 case CharacterType.Dwarf: return new Dwarf(name);
                 case CharacterType.Knight: return new Knight(name);

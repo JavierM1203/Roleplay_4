@@ -2,7 +2,7 @@ namespace RoleplayGame.Items;
 /// <summary>
 /// Casco para defenderse.
 /// </summary>
-public class Helmet : IDefenseItem
+public class Shell : IDefenseItem
 {
     /// <summary>
     /// Poder de defensa.
@@ -12,12 +12,12 @@ public class Helmet : IDefenseItem
     {
         get
         {
-            return 50;
+            return 100;
         }
     }
 
     public override string ToString()
     {
-        return "Helmet";
+        return "Shell";
     }
 }

@@ -9,6 +9,7 @@ namespace RoleplayGame.Items
         Robes = 2,
         Shield = 3,
         Sword = 4,
+        Helmet = 5,
         Bazooka = 6,
     }
 
@@ -30,6 +31,7 @@ namespace RoleplayGame.Items
                 case ItemType.Robes: return new Robes();
                 case ItemType.Shield: return new Shield();
                 case ItemType.Sword: return new Sword();
+                case ItemType.Helmet: return new Helmet();
                 case ItemType.Bazooka: return new Bazooka();
 
                 default: return null;

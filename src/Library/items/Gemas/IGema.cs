@@ -1,6 +1,6 @@
 namespace RoleplayGame.Items 
 {
-    public interface IGema
+    public interface IGema : IAttackItem, IDefenseItem, IItem
     {
         
     }

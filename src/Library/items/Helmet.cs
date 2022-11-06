@@ -12,7 +12,7 @@ public class Helmet : IDefenseItem
     {
         get
         {
-            return 50;
+            return 10;
         }
     }
 

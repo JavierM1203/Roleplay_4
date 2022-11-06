@@ -6,7 +6,7 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return 30;
+                return 10;
             }
         }
 

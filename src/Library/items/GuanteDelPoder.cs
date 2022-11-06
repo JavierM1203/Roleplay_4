@@ -7,14 +7,20 @@ namespace RoleplayGame.Items
     public class GuanteDelPoder : IAttackItem, IDefenseItem
     {
 
-        private List<IGema> allUsers = new List<IGema>();
+        private List<IGema> allGemas = new List<IGema>();
        
-      
+        
         public int AttackPower
         {
             get
             {
-                return 70;
+                int attack = 0;
+                
+                foreach (IGema g in allGemas)
+                {
+                    attack += g.AttackPower;
+                }
+                return attack;
             }
         }
 
@@ -22,14 +28,26 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return 70;
+                int defense = 0;
+                
+                foreach (IGema g in allGemas)
+                {
+                    defense += g.DefensePower;
+                }
+                return defense;
             }
         }
-        public void AgregarGema(IGema g, Character ch)
+        public void AgregarGema(IGema g)
         {
-           
+            if (!allGemas.Contains(g) )
+            {
+              allGemas.Add(g);     
+            }
         }
-
+        public void RemoveGema(IGema g)
+        {
+            allGemas.Remove(g);
+        }
 
     }
 }

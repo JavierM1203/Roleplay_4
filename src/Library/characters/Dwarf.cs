@@ -12,7 +12,6 @@ namespace RoleplayGame.Characters
             : base(name)
         {
             this.Health = 150;
-            this.AddItem(new Robes());
             this.AddItem(new Helmet());
             this.AddItem(new Sword());
         }

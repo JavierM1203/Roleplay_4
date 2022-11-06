@@ -6,7 +6,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            IScenario scenario = new ConsoleOurScenario();
+            IScenario scenario = new ConsoleScenario();
             scenario.Setup();
             scenario.Run();
         }
